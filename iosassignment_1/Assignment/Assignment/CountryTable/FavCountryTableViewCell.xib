@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavCountryTableViewCell" customModule="Assignment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="169" id="KGk-i7-Jjw" customClass="FavCountryTableViewCell" customModule="Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="501" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="501" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwH-Rh-kYX">
+                        <rect key="frame" x="20" y="20" width="461" height="128.5"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AW1-cq-HH3">
+                                <rect key="frame" x="116.5" y="20" width="324.5" height="88.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qri-oR-HUw">
+                                <rect key="frame" x="421" y="88.5" width="30" height="30"/>
+                                <color key="tintColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="delete"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-eJ-3xm">
+                                <rect key="frame" x="20" y="20" width="88.5" height="88.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88.5" id="YJh-Zc-FLj"/>
+                                    <constraint firstAttribute="width" secondItem="YnM-eJ-3xm" secondAttribute="height" multiplier="1:1" id="vje-hx-9Ab"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YnM-eJ-3xm" firstAttribute="centerY" secondItem="KwH-Rh-kYX" secondAttribute="centerY" id="4g2-iS-Sf9"/>
+                            <constraint firstAttribute="bottom" secondItem="AW1-cq-HH3" secondAttribute="bottom" constant="20" symbolic="YES" id="7EF-yz-m2Z"/>
+                            <constraint firstItem="YnM-eJ-3xm" firstAttribute="leading" secondItem="KwH-Rh-kYX" secondAttribute="leading" constant="20" symbolic="YES" id="7V2-UQ-3bx"/>
+                            <constraint firstAttribute="height" secondItem="AW1-cq-HH3" secondAttribute="height" constant="40" id="80k-2P-VBv"/>
+                            <constraint firstAttribute="bottom" secondItem="Qri-oR-HUw" secondAttribute="bottom" constant="10" id="PfM-de-alo"/>
+                            <constraint firstAttribute="trailing" secondItem="AW1-cq-HH3" secondAttribute="trailing" constant="20" symbolic="YES" id="Zxf-HE-66n"/>
+                            <constraint firstItem="AW1-cq-HH3" firstAttribute="top" secondItem="KwH-Rh-kYX" secondAttribute="top" constant="20" symbolic="YES" id="hSh-1Z-Kc0"/>
+                            <constraint firstItem="AW1-cq-HH3" firstAttribute="leading" secondItem="YnM-eJ-3xm" secondAttribute="trailing" constant="8" symbolic="YES" id="oE9-SX-b7p"/>
+                            <constraint firstAttribute="trailing" secondItem="Qri-oR-HUw" secondAttribute="trailing" constant="10" id="qYg-bF-RGr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KwH-Rh-kYX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="18J-Xh-OGN"/>
+                    <constraint firstItem="KwH-Rh-kYX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="JBi-zR-8zG"/>
+                    <constraint firstAttribute="bottom" secondItem="KwH-Rh-kYX" secondAttribute="bottom" constant="20" symbolic="YES" id="Wbv-ZB-GLb"/>
+                    <constraint firstAttribute="trailing" secondItem="KwH-Rh-kYX" secondAttribute="trailing" constant="20" symbolic="YES" id="kHG-E8-kIQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryLabelInfo" destination="AW1-cq-HH3" id="kLv-za-mEm"/>
+                <outlet property="deleteButton" destination="Qri-oR-HUw" id="IZ2-HK-sqL"/>
+                <outlet property="flagImageView" destination="YnM-eJ-3xm" id="wlk-VH-6RN"/>
+            </connections>
+            <point key="canvasLocation" x="-56.5" y="116.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="30" height="30"/>
+    </resources>
+</document>
