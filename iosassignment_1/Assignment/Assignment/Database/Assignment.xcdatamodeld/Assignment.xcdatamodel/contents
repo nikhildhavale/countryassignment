@@ -5,7 +5,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="region" optional="YES" attributeType="String"/>
         <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FavCountryInfo"/>
-        <relationship name="languages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavLanguage"/>
+        <relationship name="languages" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FavLanguage"/>
     </entity>
     <entity name="FavCountryInfo" representedClassName="FavCountryInfo" syncable="YES">
         <attribute name="borders" optional="YES" attributeType="String"/>

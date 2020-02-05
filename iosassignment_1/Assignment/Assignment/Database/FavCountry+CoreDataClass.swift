@@ -2,8 +2,8 @@
 //  FavCountry+CoreDataClass.swift
 //  Assignment
 //
-//  Created by Nikhil Modi on 3/7/18.
-//  Copyright © 2018 Nikhil Dhavale. All rights reserved.
+//  Created by Nikhil d on 05/02/20.
+//  Copyright © 2020 Nikhil Dhavale. All rights reserved.
 //
 //
 

@@ -16,8 +16,6 @@
 		4B55C590204D03170028DD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B55C58E204D03170028DD1A /* LaunchScreen.storyboard */; };
 		4B55C5B4204D04720028DD1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55C5B3204D04720028DD1A /* Constants.swift */; };
 		4B55C5B6204D07830028DD1A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55C5B5204D07830028DD1A /* Extension.swift */; };
-		4B82C567204FBEF3002BF11F /* FavCountry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82C561204FBEF3002BF11F /* FavCountry+CoreDataClass.swift */; };
-		4B82C568204FBEF3002BF11F /* FavCountry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82C562204FBEF3002BF11F /* FavCountry+CoreDataProperties.swift */; };
 		4B82C56B204FBEF3002BF11F /* FavLanguage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82C565204FBEF3002BF11F /* FavLanguage+CoreDataClass.swift */; };
 		4B82C56C204FBEF3002BF11F /* FavLanguage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82C566204FBEF3002BF11F /* FavLanguage+CoreDataProperties.swift */; };
 		4B82C56F204FC38A002BF11F /* FavCountryInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82C56D204FC38A002BF11F /* FavCountryInfo+CoreDataClass.swift */; };
@@ -40,7 +38,8 @@
 		4BB56783204D4E7C009D3599 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB56782204D4E7C009D3599 /* NetworkSession.swift */; };
 		4BB56785204D626B009D3599 /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB56784204D626B009D3599 /* CountryDetailViewController.swift */; };
 		4BC9D5E6204FF272005ADD88 /* FavCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9D5E5204FF272005ADD88 /* FavCollectionViewCell.swift */; };
-		F17EEE4323E8193900DC9C7C /* LMSList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EEE4223E8193900DC9C7C /* LMSList+CoreDataClass.swift */; };
+		F1F3386123EA816000967447 /* FavCountry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3385F23EA816000967447 /* FavCountry+CoreDataClass.swift */; };
+		F1F3386223EA816000967447 /* FavCountry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3386023EA816000967447 /* FavCountry+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +59,6 @@
 		4B55C5A7204D03170028DD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B55C5B3204D04720028DD1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4B55C5B5204D07830028DD1A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		4B82C561204FBEF3002BF11F /* FavCountry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavCountry+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4B82C562204FBEF3002BF11F /* FavCountry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavCountry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B82C565204FBEF3002BF11F /* FavLanguage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavLanguage+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4B82C566204FBEF3002BF11F /* FavLanguage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavLanguage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B82C56D204FC38A002BF11F /* FavCountryInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavCountryInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -92,7 +89,8 @@
 		D60AF58A1CC2AA41F91AFBA8 /* Pods-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssignmentUITests/Pods-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA066F5AD48352509B9B7AC1 /* Pods_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA582ABAFBF3075C89B685B7 /* Pods_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F17EEE4223E8193900DC9C7C /* LMSList+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LMSList+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F1F3385F23EA816000967447 /* FavCountry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavCountry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1F3386023EA816000967447 /* FavCountry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavCountry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,11 +207,10 @@
 		4BB5678C204D671B009D3599 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				F17EEE4223E8193900DC9C7C /* LMSList+CoreDataClass.swift */,
+				F1F3385F23EA816000967447 /* FavCountry+CoreDataClass.swift */,
+				F1F3386023EA816000967447 /* FavCountry+CoreDataProperties.swift */,
 				4B82C56D204FC38A002BF11F /* FavCountryInfo+CoreDataClass.swift */,
 				4B82C56E204FC38A002BF11F /* FavCountryInfo+CoreDataProperties.swift */,
-				4B82C561204FBEF3002BF11F /* FavCountry+CoreDataClass.swift */,
-				4B82C562204FBEF3002BF11F /* FavCountry+CoreDataProperties.swift */,
 				4B82C565204FBEF3002BF11F /* FavLanguage+CoreDataClass.swift */,
 				4B82C566204FBEF3002BF11F /* FavLanguage+CoreDataProperties.swift */,
 				4B9AA0BF204E6C83008E2E2A /* User+CoreDataClass.swift */,
@@ -373,16 +370,14 @@
 				4B82C56C204FBEF3002BF11F /* FavLanguage+CoreDataProperties.swift in Sources */,
 				4B55C588204D03170028DD1A /* LoginViewController.swift in Sources */,
 				4BB56775204D1F03009D3599 /* CountryListViewController.swift in Sources */,
-				F17EEE4323E8193900DC9C7C /* LMSList+CoreDataClass.swift in Sources */,
 				4B82C570204FC38A002BF11F /* FavCountryInfo+CoreDataProperties.swift in Sources */,
 				4B9AA0C8204E9510008E2E2A /* CountryCollectionViewCell.swift in Sources */,
 				4BB56773204D1756009D3599 /* RegisterViewController.swift in Sources */,
-				4B82C568204FBEF3002BF11F /* FavCountry+CoreDataProperties.swift in Sources */,
+				F1F3386223EA816000967447 /* FavCountry+CoreDataProperties.swift in Sources */,
 				4BB56777204D1F25009D3599 /* FavouritiesListViewController.swift in Sources */,
 				4BB5677F204D3413009D3599 /* CountryTableViewCell.swift in Sources */,
 				4B82C56B204FBEF3002BF11F /* FavLanguage+CoreDataClass.swift in Sources */,
 				4B3233502050F45E00ED9613 /* TransparentViewController.swift in Sources */,
-				4B82C567204FBEF3002BF11F /* FavCountry+CoreDataClass.swift in Sources */,
 				4B9AA0C1204E6C83008E2E2A /* User+CoreDataClass.swift in Sources */,
 				4BB5677D204D2EAC009D3599 /* CustomTabViewController.swift in Sources */,
 				4BB56779204D1F56009D3599 /* CountryTableViewController.swift in Sources */,
@@ -397,6 +392,7 @@
 				4BB56783204D4E7C009D3599 /* NetworkSession.swift in Sources */,
 				4B55C586204D03170028DD1A /* AppDelegate.swift in Sources */,
 				4B8E6F33204FD8EF00E5F89E /* FavCountryTableViewCell.swift in Sources */,
+				F1F3386123EA816000967447 /* FavCountry+CoreDataClass.swift in Sources */,
 				4B55C5B4204D04720028DD1A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

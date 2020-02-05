@@ -2,8 +2,8 @@
 //  FavCountry+CoreDataProperties.swift
 //  Assignment
 //
-//  Created by Nikhil Modi on 3/7/18.
-//  Copyright © 2018 Nikhil Dhavale. All rights reserved.
+//  Created by Nikhil d on 05/02/20.
+//  Copyright © 2020 Nikhil Dhavale. All rights reserved.
 //
 //
 
@@ -21,8 +21,7 @@ extension FavCountry {
     @NSManaged public var name: String?
     @NSManaged public var region: String?
     @NSManaged public var info: FavCountryInfo?
-    @NSManaged public var languages: NSSet?
-    
+    @NSManaged public var languages: NSOrderedSet?
     /// Return AttributedString to show info in item cell
     func getBasicInfo() -> NSMutableAttributedString{
         let countryInfo = NSMutableAttributedString()
@@ -74,6 +73,24 @@ extension FavCountry {
 // MARK: Generated accessors for languages
 extension FavCountry {
 
+    @objc(insertObject:inLanguagesAtIndex:)
+    @NSManaged public func insertIntoLanguages(_ value: FavLanguage, at idx: Int)
+
+    @objc(removeObjectFromLanguagesAtIndex:)
+    @NSManaged public func removeFromLanguages(at idx: Int)
+
+    @objc(insertLanguages:atIndexes:)
+    @NSManaged public func insertIntoLanguages(_ values: [FavLanguage], at indexes: NSIndexSet)
+
+    @objc(removeLanguagesAtIndexes:)
+    @NSManaged public func removeFromLanguages(at indexes: NSIndexSet)
+
+    @objc(replaceObjectInLanguagesAtIndex:withObject:)
+    @NSManaged public func replaceLanguages(at idx: Int, with value: FavLanguage)
+
+    @objc(replaceLanguagesAtIndexes:withLanguages:)
+    @NSManaged public func replaceLanguages(at indexes: NSIndexSet, with values: [FavLanguage])
+
     @objc(addLanguagesObject:)
     @NSManaged public func addToLanguages(_ value: FavLanguage)
 
@@ -81,9 +98,9 @@ extension FavCountry {
     @NSManaged public func removeFromLanguages(_ value: FavLanguage)
 
     @objc(addLanguages:)
-    @NSManaged public func addToLanguages(_ values: NSSet)
+    @NSManaged public func addToLanguages(_ values: NSOrderedSet)
 
     @objc(removeLanguages:)
-    @NSManaged public func removeFromLanguages(_ values: NSSet)
+    @NSManaged public func removeFromLanguages(_ values: NSOrderedSet)
 
 }
