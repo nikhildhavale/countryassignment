@@ -32,13 +32,13 @@ class FavouritiesListViewController: UIViewController,UISearchBarDelegate {
     @objc func deleteItem(button:UIButton){
         let indexPath = IndexPath(row: button.tag, section: 0)
         if self.traitCollection.userInterfaceIdiom == .pad{
-            if let countryCollectionCountroller = self.childViewControllers[1] as? CountryCollectionViewController {
+            if let countryCollectionCountroller = self.children[1] as? CountryCollectionViewController {
                 if let favCountry = countryCollectionCountroller.fetchResultController.object(at: indexPath) as? FavCountry{
                     DatabaseModel.shared.deleteFavCountry(favCountry: favCountry)
                 }
             }
         }
-        if let countryController = self.childViewControllers.first as? CountryTableViewController {
+        if let countryController = self.children.first as? CountryTableViewController {
             if let favCountry = countryController.fetchResultController.object(at: indexPath) as? FavCountry{
                 DatabaseModel.shared.deleteFavCountry(favCountry: favCountry)
 
@@ -77,13 +77,13 @@ class FavouritiesListViewController: UIViewController,UISearchBarDelegate {
     /// LoadData with fectch controller and reload data on enum set
     func loadData(fetchResultController:NSFetchedResultsController<NSFetchRequestResult>){
         if self.traitCollection.userInterfaceIdiom == .pad{
-            if let countryCollectionCountroller = self.childViewControllers[1] as? CountryCollectionViewController {
+            if let countryCollectionCountroller = self.children[1] as? CountryCollectionViewController {
                 countryCollectionCountroller.fetchResultController = fetchResultController
 
                 countryCollectionCountroller.tabSection = .Fav
             }
         }
-        if let countryController = self.childViewControllers.first as? CountryTableViewController {
+        if let countryController = self.children.first as? CountryTableViewController {
             countryController.fetchResultController = fetchResultController
             countryController.tabSection = .Fav
             

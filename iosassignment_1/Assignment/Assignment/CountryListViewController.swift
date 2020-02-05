@@ -38,12 +38,12 @@ class CountryListViewController: UIViewController {
     /// set the data to child controllers on recieving response from the server
     func setCountryData(){
         if self.traitCollection.userInterfaceIdiom == .pad{
-            if let countryCollectionCountroller = self.childViewControllers[1] as? CountryCollectionViewController {
+            if let countryCollectionCountroller = self.children[1] as? CountryCollectionViewController {
                 countryCollectionCountroller.countries = countries
                 countryCollectionCountroller.tabSection = .List
             }
         }
-        if let countryController = self.childViewControllers.first as? CountryTableViewController {
+        if let countryController = self.children.first as? CountryTableViewController {
                 countryController.countries = countries
             countryController.tabSection = .List
             

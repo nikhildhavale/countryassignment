@@ -20,10 +20,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.navigationController?.navigationBar.barTintColor = ColorConstants.NavigationColor
         userName.setupUI(placeHolderText: PlaceHolderText.UserName)
         password.setupUI(placeHolderText: PlaceHolderText.Password)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         setStackViewWidthBasedOnOrientation()
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         oldConstant = bottomConstraint.constant
     }
     @objc func keyboardWillHide(notification:Notification){
@@ -31,7 +31,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
     }
     @objc func keyboardWillShow(notification:Notification){
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             bottomConstraint.constant = keyboardSize.height
         }
         

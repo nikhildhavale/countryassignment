@@ -20,8 +20,8 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         confirmPassword.setupUI(placeHolderText: PlaceHolderText.ConfirmPassword)
         password.setupUI(placeHolderText: PlaceHolderText.Password)
         userName.setupUI(placeHolderText: PlaceHolderText.UserName)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
     }
     @objc func keyboardWillHide(notification:Notification){
@@ -29,7 +29,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         
     }
     @objc func keyboardWillShow(notification:Notification){
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             buttomConstraint.constant = keyboardSize.height
         }
         

@@ -68,7 +68,7 @@ extension UITextField{
     ///UI for textfield is set with placeholder text
     func setupUI(placeHolderText:String){
         self.backgroundColor = ColorConstants.LightBackgroundColor
-        self.attributedPlaceholder = NSAttributedString(string:placeHolderText , attributes: [NSAttributedStringKey.foregroundColor:ColorConstants.TextColor])
+        self.attributedPlaceholder = NSAttributedString(string:placeHolderText , attributes: [NSAttributedString.Key.foregroundColor:ColorConstants.TextColor])
         self.textColor = ColorConstants.TextColor
         self.font = FontConstant.defaultFont
         
@@ -91,7 +91,7 @@ extension NSAttributedString {
     /// converts string to attributed string with bold and bigger default font
     static func mainAttributedString(string:String?) -> NSAttributedString{
         if string != nil {
-            let itemAttributedString = NSAttributedString(string: "\n\n\(string!)", attributes: [NSAttributedStringKey.font:FontConstant.defaultBoldFontHigher,NSAttributedStringKey.foregroundColor: UIColor.black])
+            let itemAttributedString = NSAttributedString(string: "\n\n\(string!)", attributes: [NSAttributedString.Key.font:FontConstant.defaultBoldFontHigher,NSAttributedString.Key.foregroundColor: UIColor.black])
             return itemAttributedString
         }
         return NSAttributedString()
@@ -99,7 +99,7 @@ extension NSAttributedString {
     /// converts string to attributed string with bold default font
     static func itemAttributedString(string:String?) -> NSAttributedString{
         if string != nil {
-            let itemAttributedString = NSAttributedString(string: "\n\(string!)", attributes: [NSAttributedStringKey.font:FontConstant.defaultBoldFont,NSAttributedStringKey.foregroundColor: UIColor.darkGray])
+            let itemAttributedString = NSAttributedString(string: "\n\(string!)", attributes: [NSAttributedString.Key.font:FontConstant.defaultBoldFont,NSAttributedString.Key.foregroundColor: UIColor.darkGray])
             return itemAttributedString
         }
         return NSAttributedString()
@@ -107,7 +107,7 @@ extension NSAttributedString {
     /// converts string to attributed string with default font
     static func itemNonBoldAttributedString(string:String?) -> NSAttributedString {
         if string != nil {
-            let itemAttributedString = NSAttributedString(string: "\n\(string!)", attributes: [NSAttributedStringKey.foregroundColor:ColorConstants.TextColor,NSAttributedStringKey.font:FontConstant.defaultFont])
+            let itemAttributedString = NSAttributedString(string: "\n\(string!)", attributes: [NSAttributedString.Key.foregroundColor:ColorConstants.TextColor,NSAttributedString.Key.font:FontConstant.defaultFont])
             return itemAttributedString
         }
         return NSAttributedString()

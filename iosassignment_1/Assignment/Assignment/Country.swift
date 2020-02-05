@@ -99,7 +99,7 @@ class Country {
     func getBasicCountryInfo() -> NSMutableAttributedString{
         let countryInfo = NSMutableAttributedString()
         if name != nil {
-            let countryName = NSAttributedString(string: name!, attributes: [NSAttributedStringKey.foregroundColor : UIColor.black,NSAttributedStringKey.font:FontConstant.defaultBoldFont])
+            let countryName = NSAttributedString(string: name!, attributes: [NSAttributedString.Key.foregroundColor : UIColor.black,NSAttributedString.Key.font:FontConstant.defaultBoldFont])
             countryInfo.append(countryName)
         }
         countryInfo.append(NSAttributedString.itemNonBoldAttributedString(string: capital))
